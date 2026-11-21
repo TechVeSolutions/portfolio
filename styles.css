@@ -88,10 +88,14 @@ footer{background:#F3EEE3;color:#3B4560;padding:2rem 0 3rem;font-size:.9rem;bord
 .rail a{display:flex;align-items:center;justify-content:flex-end;gap:.6rem;color:#C3C9D8;text-decoration:none;font-size:.8rem}
 .rail b{font-weight:500;width:1.9rem;text-align:center}
 .rail span{max-width:0;overflow:hidden;white-space:nowrap;transition:max-width .35s}
-.rail a:hover span,.rail a:focus-visible span,.rail a[aria-current] span{max-width:7rem;padding-right:.4rem}
+.rail a:hover span,.rail a:focus-visible span{max-width:7rem;padding-right:.4rem}
+/* active label only where the gutter can fit it, so it never covers content */
+@media(min-width:92rem){.rail a[aria-current] span{max-width:7rem;padding-right:.4rem}}
 .rail a[aria-current]{color:#D4AE5C}
 .rail::after{content:"";position:absolute;left:50%;bottom:-1.3rem;width:2px;height:.8rem;border-radius:2px;background:#D4AE5C;transform-origin:top;scale:1 var(--progress,0);translate:-50% 0}
 @media(max-width:44.9rem){.js .rail{display:none}}
+/* keep content clear of the fixed rail where both are shown */
+@media(min-width:45rem){.js .wrap{width:min(100% - 2*var(--pad) - 7rem,70rem)}}
 
 /* night lights: gold points that fade as the day arrives */
 .lights{position:fixed;inset:0;z-index:0;pointer-events:none;
