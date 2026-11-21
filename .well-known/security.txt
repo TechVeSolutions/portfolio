@@ -1,0 +1,4 @@
+Contact: mailto:hello@christophersuarez.net
+Expires: 2027-11-21T00:00:00.000Z
+Preferred-Languages: en, es
+Canonical: https://christophersuarez.net/.well-known/security.txt
