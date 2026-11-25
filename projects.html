@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; style-src-attr 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Projects &amp; labs · Christopher Suarez</title>
+<meta name="description" content="Sixteen hands-on IT and cybersecurity labs by Christopher Suarez: cabling, firewalls, packet analysis, forensics, vulnerability management, incident response and compliance.">
+<meta name="theme-color" content="#0E1830">
+<link rel="canonical" href="https://christophersuarez.net/projects">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Christopher Suarez">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Christopher Suarez">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Projects &amp; labs · Christopher Suarez">
+<meta property="og:description" content="From the cable to the code, in proof: sixteen hands-on IT and security labs.">
+<meta property="og:url" content="https://christophersuarez.net/projects">
+<meta property="og:image" content="https://christophersuarez.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="From the cable to the code. Christopher Suarez, IT and cybersecurity.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Projects &amp; labs · Christopher Suarez">
+<meta name="twitter:description" content="From the cable to the code, in proof: sixteen hands-on IT and security labs.">
+<meta name="twitter:image" content="https://christophersuarez.net/assets/og.png">
+<link rel="apple-touch-icon" href="/assets/headshot.webp">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script src="/main.js"></script>
+</head>
+<body>
+<a class="skip" href="#cable">Skip to content</a>
+<div class="lights" aria-hidden="true"></div>
+<nav class="rail" aria-label="Chapters">
+  <ol>
+    <li><a href="#cable"><b>01</b><span>The cable</span></a></li>
+    <li><a href="#office"><b>02</b><span>The office</span></a></li>
+    <li><a href="#shield"><b>03</b><span>The shield</span></a></li>
+  </ol>
+</nav>
+
+<main>
+<header class="hero" id="top">
+  <div class="wrap">
+    <p class="kicker reveal">Projects &amp; labs</p>
+    <h1 class="reveal" style="--d:.12s">From the cable to&nbsp;the&nbsp;code, in&nbsp;proof.</h1>
+    <p class="lead reveal" style="--d:.24s">The same chapters as my story, with the hands-on work behind each one. Sixteen labs, each told the same way: the problem, what I did, what came out of it.</p>
+    <p class="buttons reveal" style="--d:.36s">
+      <a class="btn gold" href="/">Read the story</a>
+      <a class="btn ghost" href="/Christopher-Suarez-Resume.pdf">Résumé</a>
+    </p>
+  </div>
+</header>
+
+<section class="chapter" data-step="1" id="cable" aria-labelledby="cable-h">
+  <div class="wrap">
+    <div class="head">
+      <p class="num reveal" aria-hidden="true">01</p>
+      <p class="kicker reveal">The cable</p>
+      <h2 id="cable-h" class="reveal">Networks, by hand.</h2>
+    </div>
+    <ul class="labs">
+      <li class="lab reveal"><p class="when">2024–2025 · Field</p><h3>Structured cabling installs</h3><p>Homes and offices needed reliable wired networks. I pulled, dressed, terminated and certified Cat5e to Cat8 copper runs and patch panels, which cut downtime by 15%.</p></li>
+      <li class="lab reveal" style="--d:.08s"><p class="when">Ongoing · Network</p><h3>Segmented home lab</h3><p>I wanted a safe place to test before touching a real network. I run a Zyxel USG FLEX 50H firewall and a Cisco CBS350 managed switch with separate VLANs and a VPN.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="chapter" data-step="2" id="office" aria-labelledby="office-h">
+  <div class="wrap">
+    <div class="head">
+      <p class="num reveal" aria-hidden="true">02</p>
+      <p class="kicker reveal">The office</p>
+      <h2 id="office-h" class="reveal">Keeping the network honest.</h2>
+    </div>
+    <ul class="labs">
+      <li class="lab reveal"><p class="when">Aug 2025 · Network</p><h3>Firewall administration on Palo Alto NGFW</h3><p>A flat network lets one infected machine reach everything. On a VM-Series firewall I built zones, security policies, NAT rules and custom URL filtering to segment it.</p></li>
+      <li class="lab reveal" style="--d:.08s"><p class="when">Aug 2025 · Network</p><h3>Attack traffic analysis with Wireshark</h3><p>A packet capture held an attack in plain sight. I followed the TCP handshake through HTTP and DNS traffic, filtered the noise and pulled out the stolen credentials.</p></li>
+      <li class="lab reveal" style="--d:.16s"><p class="when">Aug 2025 · Network</p><h3>Windows Firewall log analysis</h3><p>Logs only help if someone reads them. I went through Windows Firewall logs, read the TCP flags and documented port scans and suspicious single-port connections.</p></li>
+      <li class="lab reveal"><p class="when">Jul 2025 · Network</p><h3>SSL certificate analysis</h3><p>Every secure website depends on a chain of trust. I took a certificate apart: its fingerprints, the chain up to the certificate authority and the revocation list.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="chapter" data-step="3" id="shield" aria-labelledby="shield-h" style="--zone:30vh">
+  <div class="wrap">
+    <div class="head">
+      <p class="num reveal" aria-hidden="true">03</p>
+      <p class="kicker reveal">The shield</p>
+      <h2 id="shield-h" class="reveal">Finding it, fixing it, reporting it.</h2>
+    </div>
+    <ul class="labs">
+      <li class="lab reveal"><p class="when">Sep 2025 · Security</p><h3>Windows forensics investigation</h3><p>A Windows machine was compromised and nobody knew how. With Event Viewer, CMD and VirusTotal I rebuilt the timeline: the account used, the processes and the malicious activity.</p></li>
+      <li class="lab reveal" style="--d:.08s"><p class="when">Oct 2025 · Security</p><h3>NotPetya incident report</h3><p>Leaders need to know what happened and what it cost. I rebuilt the timeline of the attack on Maersk, sized the infected assets and wrote a full incident report with an executive summary.</p></li>
+      <li class="lab reveal" style="--d:.16s"><p class="when">Oct 2025 · Security</p><h3>Vulnerability management with Nessus</h3><p>Scan results mean nothing without priorities. I scanned systems, ranked findings from Critical to Low with CVSS and wrote a remediation report with clear next steps.</p></li>
+      <li class="lab reveal"><p class="when">Sep 2025 · Security</p><h3>Vulnerability program analysis</h3><p>An organization had more findings than time. I went through its scan data to find the highest-risk systems, the most critical issues and the oldest unpatched vulnerabilities.</p></li>
+      <li class="lab reveal" style="--d:.08s"><p class="when">Sep 2025 · Security</p><h3>EDR evaluation</h3><p>A business had to choose endpoint protection. I compared three EDR products against its requirements with risk-control mapping and recommended the best fit.</p></li>
+      <li class="lab reveal" style="--d:.16s"><p class="when">Sep 2025 · Security</p><h3>Phishing email analysis</h3><p>Five suspicious emails, one question: which ones are phishing? I checked every link in VirusTotal, classified each email and documented its indicators of compromise.</p></li>
+      <li class="lab reveal"><p class="when">Jul 2025 · Security</p><h3>Cryptography with CyberChef</h3><p>To defend encryption you have to understand it. I practiced hashing, encoding, encryption and cryptanalysis, and solved cipher puzzles including MD5.</p></li>
+      <li class="lab reveal" style="--d:.08s"><p class="when">Jul 2025 · Security</p><h3>AI in offense and defense</h3><p>Attackers already use AI, so defenders should know how. I tested ChatGPT, Gemini and Copilot on phishing simulation, keylogger awareness and defensive guidance, and compared the results.</p></li>
+      <li class="lab reveal" style="--d:.16s"><p class="when">Oct 2025 · Compliance</p><h3>GDPR audit of a messaging app</h3><p>Privacy policies make promises the law can check. I reviewed a major messaging app's policy against GDPR: data security, retention, international transfers, cookies and data subject rights.</p></li>
+      <li class="lab reveal"><p class="when">Oct 2025 · Compliance</p><h3>ISO 27001:2022 audit checklist</h3><p>An audit is only as good as its questions. I wrote an ISO 27001:2022 checklist for data security, asset management and risk assessment, with five control questions per area.</p></li>
+    </ul>
+    <p class="note reveal">These labs were part of the Post Graduate Program in Cybersecurity at UT Austin McCombs School of Business (conferred January 2026), plus my own practice at home.</p>
+  </div>
+</section>
+
+<section class="fork" id="contact" aria-labelledby="fork-h">
+  <div class="wrap">
+    <h2 id="fork-h" class="reveal">Want this on your team?</h2>
+    <p class="muted reveal">I'm open to remote IT and cybersecurity roles.</p>
+    <p class="buttons reveal"><a class="btn navy" href="/Christopher-Suarez-Resume.pdf">Get my résumé</a></p>
+    <p class="extra reveal"><a href="mailto:hello@christophersuarez.net">hello@christophersuarez.net</a> · <a href="https://linkedin.com/in/christophersuarez-it" rel="noopener">LinkedIn</a></p>
+  </div>
+</section>
+</main>
+<footer><div class="wrap"><a href="/">Story</a> · <a href="/projects">Projects</a> · © 2026 Christopher Suarez · Remote</div></footer>
+</body>
+</html>

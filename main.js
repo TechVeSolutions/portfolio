@@ -32,6 +32,7 @@ addEventListener('DOMContentLoaded', () => {
   }
   // Fiber line, night sky, sunrise. Layout is read on resize only; the frame loop reads scrollY.
   const svg = document.querySelector('.fiber'), cv = document.querySelector('.sky'), shield = document.getElementById('shield');
+  if (!svg || !cv) return; // the projects page has no fiber line or sky
   const core = svg.querySelector('.c'), glow = svg.querySelector('.g'), pulse = svg.querySelector('.p'), grad = svg.querySelector('linearGradient');
   const NS = 'http://www.w3.org/2000/svg', clamp = v => Math.max(0, Math.min(1, v));
   let L = 0, y0 = 0, y1 = 0, mt = 0, shTop = 0, p = -1, sun = -1, nodes = [], on = 0;
